@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Spring Boot Machine Test </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css"
+          href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>   
+</head>
+<body>
+ <div class="fixed-header" th:replace="header :: myheader"></div>
+<div class="container"  style="overflow-y:auto" >
+    <div class="starter-template "  id="billSearch"  >
+        <h1>Bill Search :</h1>
+        
+        <form class="form-horizontal" id="search-form">
+            <div class="form-group form-group-lg">
+       
+                <label class="col-sm-2 control-label">Account Number :</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="accountNumber" placeholder="Account Number.." />
+                </div>
+                 <label class="col-sm-2 control-label">Payer Name :</label>
+                <div class="col-sm-10">               
+                    <input type="text" class="form-control" id="payerName"  placeholder="Payer Name.." />
+                </div>
+                 <label class="col-sm-2 control-label">Payer Address:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="payerAddress" placeholder="Payer Address.."/>
+                </div>
+               
+            </div>
+            
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" id="bth-search"
+                            class="btn btn-primary btn-lg">Search
+                    </button>
+                    <button type="submit" id="bth-new-search"
+                            class="btn btn-primary btn-lg" hidden>New Search
+                    </button>
+                             
+                    <button type="button" id="bth-view-cart"
+                            class="btn btn-primary btn-lg" hidden>View Cart
+                    </button>                  
+       
+                </div>
+            </div>
+        </form>
+        
+    <div  style="overflow-y:auto">
+    <table id='searchResulttable'> 
+            <!-- HEADING FORMATION -->
+            <tr> 
+                <th>Payer Name</th> 
+                <th>Payer Address</th> 
+                <th>Due Date</th> 
+                <th>Account Number</th> 
+                <th>Amount</th> 
+                 <th>Action</th> 
+            </tr> 
+            </table>
+            </div>
+    </div>
+   <div class="starter-template "  id="viewCart">
+      <h1>Cart Info :</h1>
+ <!-- TABLE CONSTRUCTION-->     
+     <table id='viewCarttable'> 
+            <!-- HEADING FORMATION -->
+            <tr> 
+                <th>Payer Name</th> 
+                <th>Payer Address</th> 
+                <th>Due Date</th> 
+                <th>Account Number</th> 
+                <th>Amount</th> 
+                 <th>Action</th> 
+            </tr> 
+            </table>  
+    <form class="form-horizontal" id="view-cart-form">
+       <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="button" id="bth-payment"
+                            class="btn btn-primary btn-lg">Make Payment
+                    </button>
+                   
+                             
+                    <button type="button" id="bth-back"
+                            class="btn btn-primary btn-lg" hidden>Back
+                    </button>                  
+       
+                </div>
+
+            </div>  
+       </form>  
+            
+            
+            
+                               
+     </div>
+</div>
+
+
+<script type="text/javascript"
+        src="webjars/jquery/2.2.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

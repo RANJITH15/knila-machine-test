@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns="http://dozer.sourceforge.net"
+ xsi:schemaLocation="http://dozer.sourceforge.net
+ http://dozer.sourceforge.net/schema/beanmapping.xsd"
+>
+	<mapping>
+		<class-a>com.knila.machine.entity.BilInfo</class-a>
+		<class-b>com.knila.machine.dto.BillDTO</class-b>
+		<field>
+			<a>billId</a>
+			<b>billId</b>
+		</field>
+		<field>
+			<a>payerName</a>
+			<b>payerName</b>
+		</field>
+		<field>
+			<a>payerAddress</a>
+			<b>payerAddress</b>
+		</field>
+		<field>
+			<a>dueDate</a>
+			<b>dueDate</b>
+		</field></mapping>
+	<mapping>
+		<class-a>com.knila.machine.entity.ViewCart</class-a>
+		<class-b>com.knila.machine.dto.BillDTO</class-b>
+		<field>
+			<a>billId</a>
+			<b>billId</b>
+		</field>
+		<field>
+			<a>payerName</a>
+			<b>payerName</b>
+		</field>
+		<field>
+			<a>payerAddress</a>
+			<b>payerAddress</b>
+		</field>
+		<field>
+			<a>dueDate</a>
+			<b>dueDate</b>
+		</field></mapping>
+</mappings>
